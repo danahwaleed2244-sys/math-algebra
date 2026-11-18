@@ -304,7 +304,7 @@ body{background-color:var(--paper);
 /* ====== إعدادات النسخة (تتغير عند «تنزيل نسخة الطالبات بالإعدادات الجديدة») ====== */
 const CFG = /*CFG*/{"scriptUrl":"https://script.google.com/macros/s/AKfycbyu9dpGNV0JKix1fbMDrqHBtfblp2Bdfj1nb4_9zbhU6T8ea5O23V66_6C7IgFSHHKOWQ/exec","classes":[{"name":"١/٣","size":30},{"name":"٢/٣","size":21}]}/*ENDCFG*/;
 const APP = {
-  version:'1.0', versionDate:'2026-11-18',
+  version:'1.1', versionDate:'2026-11-18',
   trip:'رحلة الجبر والدوال', /* اسم ورقة هذه الرحلة داخل جدول قوقل المشترك */
   title:'رحلة الرياضيات: الجبر والدوال',
   school:'متوسطة السيل الصغير', admin:'إدارة تعليم الطائف',
@@ -3235,7 +3235,7 @@ function stageChart(){
   STAGES.forEach((s,i)=>{const st=stageStats(s.id);const x=W-pad-(i+1)*bw+bw*0.15;const h1=(st.pre||0)/100*(H-pad*2),h2=(st.post||0)/100*(H-pad*2);
     g+=`<rect x="${x+bw*0.36}" y="${H-pad-h1}" width="${bw*0.32}" height="${h1}" fill="#9fb3c8" rx="3"/><rect x="${x}" y="${H-pad-h2}" width="${bw*0.32}" height="${h2}" fill="#0F766E" rx="3"/>
     <text x="${x+bw*0.34}" y="${H-pad+16}" font-size="18" text-anchor="middle" fill="#0B2A2A">${s.icon}</text>`});
-  g+=`<rect x="${W-160}" y="8" width="12" height="12" fill="#0F766E"/><text x="${W-170}" y="18" font-size="12" text-anchor="end">البعدي</text><rect x="${W-250}" y="8" width="12" height="12" fill="#9fb3c8"/><text x="${W-260}" y="18" font-size="12" text-anchor="end">القبلي</text></svg>`;
+  g+=`<rect x="${W-160}" y="8" width="12" height="12" fill="#0F766E"/><text x="${W-192}" y="18" font-size="12" text-anchor="middle">البعدي</text><rect x="${W-250}" y="8" width="12" height="12" fill="#9fb3c8"/><text x="${W-282}" y="18" font-size="12" text-anchor="middle">القبلي</text></svg>`;
   return g;
 }
 function gradeChart(){
